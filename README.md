@@ -328,3 +328,323 @@ git pull --rebase <remote> <branch>
 ```
 
 ---
+
+## 41. git whatchanged
+Shows commit history along with file changes.
+```bash
+git whatchanged
+```
+
+---
+
+## 42. git cherry
+Finds commits in one branch and not another.
+```bash
+git cherry <upstream-branch> <topic-branch>
+```
+
+---
+
+## 43. git rev-parse
+Extracts various information about commits or branches.
+```bash
+git rev-parse HEAD
+```
+
+---
+
+## 44. git revert
+Reverts a previous commit by creating a new commit that undoes the changes.
+```bash
+git revert <commit-hash>
+```
+
+---
+
+## 45. git gc
+Runs garbage collection to optimize repository size.
+```bash
+git gc
+```
+
+---
+
+## 46. git apply
+Applies a patch to the working directory.
+```bash
+git apply <patch-file>
+```
+
+---
+
+## 47. git format-patch
+Generates a patch file from commits.
+```bash
+git format-patch <commit-range>
+```
+
+---
+
+## 48. git instaweb
+Instantly serves your repository via a web server.
+```bash
+git instaweb
+```
+
+---
+
+## 49. git archive --format=tar
+Creates a .tar archive of the repository.
+```bash
+git archive --format=tar HEAD
+```
+
+---
+
+## 50. git archive --format=zip
+Creates a .zip archive of the repository.
+```bash
+git archive --format=zip HEAD -o archive.zip
+```
+
+---
+
+## 51. git tag -a
+Creates an annotated tag.
+```bash
+git tag -a <tag-name> -m "Tag message"
+```
+
+---
+
+## 52. git log -p
+Shows the commit history with patch differences.
+```bash
+git log -p
+```
+
+---
+
+## 53. git show-branch
+Visualizes the branch history.
+```bash
+git show-branch
+```
+
+---
+
+## 54. git blame -L
+Shows who made changes in a specific line range in a file.
+```bash
+git blame -L <start>,<end> <file>
+```
+
+---
+
+## 55. git checkout -- <file>
+Restores a file to its last committed state.
+```bash
+git checkout -- <file>
+```
+
+---
+
+## 56. git checkout HEAD~1
+Checks out a previous commit.
+```bash
+git checkout HEAD~1
+```
+
+---
+
+## 57. git clean -fd
+Forces deletion of untracked files and directories.
+```bash
+git clean -fd
+```
+
+---
+
+## 58. git config --list
+Lists all configuration settings.
+```bash
+git config --list
+```
+
+---
+
+## 59. git reflog expire
+Expires older reflogs.
+```bash
+git reflog expire --expire=now --all
+```
+
+---
+
+## 60. git ls-files
+Lists files in the index.
+```bash
+git ls-files
+```
+
+---
+
+## 61. git bisect run
+Runs a specified script for each bisect step.
+```bash
+git bisect run <script>
+```
+
+---
+
+## 62. git merge-base
+Finds common ancestors between commits.
+```bash
+git merge-base <commit1> <commit2>
+```
+
+---
+
+## 63. git hash-object
+Computes the SHA1 hash of a given file.
+```bash
+git hash-object <file>
+```
+
+---
+
+## 64. git push --all
+Pushes all branches to a remote repository.
+```bash
+git push --all
+```
+
+---
+
+## 65. git push --force
+Forces a push that overwrites changes in the remote branch.
+```bash
+git push --force
+```
+
+---
+
+## 66. git rm --cached
+Removes files from the index but keeps them in the working directory.
+```bash
+git rm --cached <file>
+```
+
+---
+
+## 67. git diff --cached
+Shows differences between the staged changes and the last commit.
+```bash
+git diff --cached
+```
+
+---
+
+## 68. git commit -v
+Commits staged changes and includes diff in the commit message editor.
+```bash
+git commit -v
+```
+
+---
+
+## 69. git fetch --prune
+Removes branches that no longer exist on the remote.
+```bash
+git fetch --prune
+```
+
+---
+
+## 70. git stash pop
+Applies the top stash and removes it from the stash list.
+```bash
+git stash pop
+```
+
+---
+
+## 71. git stash drop
+Removes a specific stash entry.
+```bash
+git stash drop <stash@{N}>
+```
+
+---
+
+## 72. git log --since
+Shows commits made after a specified time.
+```bash
+git log --since="2 days ago"
+```
+
+---
+
+## 73. git commit --no-edit
+Commits changes without opening an editor.
+```bash
+git commit --no-edit
+```
+
+---
+
+## 74. git grep -i
+Case-insensitive search within files.
+```bash
+git grep -i "search-term"
+```
+
+---
+
+## 75. git show :/<message>
+Shows the commit with the specified message.
+```bash
+git show :/"commit message"
+```
+
+---
+
+## 76. git diff HEAD^ HEAD
+Compares the last two commits.
+```bash
+git diff HEAD^ HEAD
+```
+
+---
+
+## 77. git fetch --depth
+Limits the number of commits fetched.
+```bash
+git fetch --depth=1
+```
+
+---
+
+## 78. git log --author
+Shows commits from a specific author.
+```bash
+git log --author="Author Name"
+```
+
+---
+
+## 79. git commit --allow-empty
+Creates an empty commit.
+```bash
+git commit --allow-empty -m "Empty commit"
+```
+
+---
+
+## 80. git log --pretty
+Formats the output of the commit history.
+```bash
+git log --pretty=format:"%h - %an, %ar : %s"
+```
+
+---
